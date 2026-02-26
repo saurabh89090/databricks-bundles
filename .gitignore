@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+# To ignore the below files like file.pyc, file.pyo, file.pyd, file.pyz
 *.py[codz]
 *$py.class
 
@@ -186,7 +187,7 @@ cython_debug/
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #  and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
 
 # Ruff stuff:
 .ruff_cache/
@@ -205,3 +206,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+################################################################################################
+# Below part is manually added.
+## Databricks
+.databricks/
+
+# Spark
+spark-warehouse/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AWS (If you use AWS credentials locally, also ensure:)
+.aws/
+################################################################################################
